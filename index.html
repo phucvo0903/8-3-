@@ -10,24 +10,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-  
+    
   body {
     font-size: 14px;
   }
 
   .container {
     padding: 10px;
-  }
-}
-
-@media only screen and (min-width: 769px) {
- 
-  body {
-    font-size: 16px;
-  }
-
-  .container {
-    padding: 20px;
   }
 }
 
@@ -43,16 +32,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <style>
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            height: 97vh;
+            
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1 1 200px;
+}
+
         }
 
         .container svg {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height:100%;
         }
     </style>
 
@@ -98,8 +93,8 @@
 
         .envelope {
             position: relative;
-            width: 300px;
-            height: 200px;
+            width: 100%;
+            height: 100%;
             background-color: #f08080;
         }
 
@@ -107,8 +102,8 @@
             background-color: #f08080;
             content: "";
             position: absolute;
-            width: 212px;
-            height: 212px;
+            width: 100%;
+            height: 100%;
             transform: rotate(45deg);
             top: -105px;
             left: 44px;
@@ -118,8 +113,8 @@
         .card {
             position: absolute;
             background-color: #eae2b7;
-            width: 270px;
-            height: 170px;
+            width: 100%;
+            height: 100%;
             top: 5px;
             left: 15px;
             box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
@@ -130,8 +125,8 @@
             position: absolute;
             border: 3px solid #003049;
             border-style: dotted;
-            width: 240px;
-            heighT: 140px;
+            width: 100%;
+            heighT: 100%;
             left: 12px;
             top: 12px;
         }
@@ -150,13 +145,13 @@
         .heart {
             background-color: #d62828;
             display: inline-block;
-            height: 30px;
+            height: 100%;
             margin: 0 10px;
             position: relative;
             top: 110px;
             left: 105px;
             transform: rotate(-45deg);
-            width: 30px;
+            width: 100%;
         }
 
         .heart:before,
@@ -164,9 +159,9 @@
             content: "";
             background-color: #d62828;
             border-radius: 50%;
-            height: 30px;
+            height: 100%;
             position: absolute;
-            width: 30px;
+            width: 100%;
         }
 
         .heart:before {
@@ -191,11 +186,11 @@
         .five {
             background-color: red;
             display: inline-block;
-            height: 10px;
+            height: 100%;
             margin: 0 10px;
             position: relative;
             transform: rotate(-45deg);
-            width: 10px;
+            width: 100%;
             top: 50px;
         }
 
@@ -212,9 +207,9 @@
             content: "";
             background-color: red;
             border-radius: 50%;
-            height: 10px;
+            height: 100%;
             position: absolute;
-            width: 10px;
+            width: 100%;
         }
 
         .one:before,
@@ -279,8 +274,8 @@
             border-bottom: 100px solid transparent;
             left: 120px;
             top: 5px;
-            width: 0;
-            height: 0;
+            width: 100%;
+            height: 100%;
             z-index: 10;
         }
 
@@ -291,14 +286,14 @@
             border-top: 195px solid transparent;
             left: -120px;
             top: -95px;
-            width: 0;
-            height: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .shadow {
             position: absolute;
-            width: 330px;
-            height: 25px;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
             background-color: rgba(0, 0, 0, 0.3);
             top: 265px;
@@ -327,7 +322,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100%;
             background-color: #fae1dd;
         }
 
@@ -414,7 +409,7 @@
     <style>
         svg {
 
-            width: 80%;
+            width: 100%;
             display: block;
             position: absolute;
             margin: auto;
@@ -486,8 +481,8 @@
 
         .content1 {
             position: absolute;
-            width: 700px;
-            height: 500px;
+            width: 100%;
+            height: 100%;
             background-image: radial-gradient(circle farthest-corner at center, #f9edf3 10%, #ffd3ee 100%);
             border-radius: 10px 70px 10px 70px;
             box-shadow: 5px 5px 10px rgb(0, 0, 0);
@@ -522,7 +517,7 @@
 
         .letters{
     position: absolute;
-    width: 65px;
+    width: 100%;
     transition: 10s ease-in-out;
     cursor: pointer;
     z-index: 1000;
@@ -534,8 +529,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.7);
     display: none;
@@ -549,8 +544,8 @@
 }
 .boxLetter .formLetter{
     position: relative;
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     background-color: #FFEBEB;
     border-radius: 20px;
     z-index: 100;
@@ -567,8 +562,8 @@
 }
 .boxLetter .before{
     position: absolute;
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     background: #fff;
     transform: rotate(-15deg);
     border-radius: 20px;
@@ -576,8 +571,8 @@
 }
 .formLetter .heartLetter{
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background: #FFEBEB;
     display: flex;
@@ -587,8 +582,8 @@
 }
 .heartLetter .heartLetterItem{
     position: relative;
-    width: 10px;
-    height: 10px;
+    width: 100%;
+    height: 100%;
     transform: rotate(45deg);
     background: #FF6666;
 }
@@ -616,12 +611,12 @@
 }
 .giftbox{
     position: relative;
-    width: 40%;
+    width: 100%;
     height: 100%;
 }
 .giftbox .img{
     position: absolute;
-    width: 180px;
+    width: 100%;
     bottom: -10px;
     left: 50px;
     z-index: 100;
@@ -665,7 +660,7 @@
 }
 .heartAnimation{
     position: absolute;
-    width: 200px;
+    width: 100%;
     bottom: 0;
 }
 .heartAnimation img{
@@ -673,7 +668,7 @@
 }
 .mewmew1, .mewmew2{
     position: absolute;
-    width: 90px;
+    width: 100%;
 }
 .mewmew1{
     bottom: 0;
